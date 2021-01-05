@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Todo app</title>
+
+  </head>
+  <body>
+    <div class="header-img"></div>
+    <main>
+      <div class="header">
+        <h1>TODO</h1>
+        <div onclick="toggleTheme()" class="theme-btn"></div>
+      </div>
+      <div class="todo-container">
+        <div class="circle1" ></div>
+        <input type="text" id="todo-input" />
+      </div>
+      <div class="todoList"></div>
+      <div class="todoInfo">
+        <div class="completedCount"></div>
+        <div onclick="clearCompleted()" >Clear Completed</div>
+        <div class="filters">
+          <div onclick="showAll()">All</div>
+          <div onclick="filterActive()">Active</div>
+          <div onclick="filterCompleted()">Completed</div>
+        </div>
+      </div>
+      <p class="footer">Drag and Drop to Reorder</p>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
